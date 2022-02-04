@@ -1,0 +1,36 @@
+.main-header{
+    text-align: center;
+    padding-top: 90px;
+
+}
+.head{
+    margin:auto;
+    /* max-width: 700px; */
+    width:80%;
+    text-align: center;
+    color:#333333;
+    font-weight:900;
+    font-size: 2.5rem;
+}
+.subhead{
+    margin: auto;
+    padding: 1rem 0 1.5rem;
+    max-width: 750px;
+    width: 90%;
+    text-align:center;
+    font-size:1.3rem;
+    vertical-align:middle;
+}
+.button-group{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+   gap:10px;
+}
+
+ @media (max-width:550px)
+{  
+    .button-group{
+        margin-bottom: 20px;
+    } 
+}

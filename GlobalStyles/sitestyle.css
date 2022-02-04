@@ -1,0 +1,116 @@
+:root{
+    --color-white:white;
+    --color-black:black;
+    --background-color:rgb(245, 247, 249);
+    --color-hr:rgb(197, 197, 197);
+}
+body {
+  margin-left: 60px;
+  margin-right: 60px;
+  max-width: 1800px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+header > span:nth-child(2) {
+  margin-left: auto;
+  margin-right: 0px;
+  display: flex;
+  gap: 10px;
+}
+main {
+  /* min-width:200px; */
+  width: 100%;
+  display: flex;
+  position: relative;
+  gap: 200px;
+}
+section {
+  flex-grow: 2233;
+  flex-shrink: 2222;
+  /* margin-right:auto; */
+}
+
+nav {
+  align-self: flex-start;
+  position: sticky;
+  flex-grow: 1;
+  flex-shrink: 0;
+  top: 10px;
+  gap: 8px;
+  padding-top: 15px;
+}
+h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+}
+/* This is a generic conainer */
+.container {
+  border: 2px solid var(--color-white);
+  background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-width: 680px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+hr {
+  max-width: 600px;
+  border: none;
+  border-bottom: 0.1px solid var(--color-hr);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--color-black);
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+/* some simple media Query */
+@media (max-width: 550px) {
+  nav {
+    display: none;
+  }
+  body {
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+/* p{
+    max-width:650px;
+} */

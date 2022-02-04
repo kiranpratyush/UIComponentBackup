@@ -1,0 +1,54 @@
+:root{
+    --badge-color:#fff;
+    --badge-bgcolor:#777;
+    --badge-red:rgb(244,67,54);
+    --badge-online:green;
+    /* different sizes */
+    --badge-border-radius:10px;
+    --badge-min-width:10px;
+    --badge-line-height:1px;
+    --badge-padding-top-bottom:3px;
+    --badge-padding-left-right:7px;
+    --badge-font-size:12px;
+    --badge-font-weight:700;
+    /* badge avator */
+    
+}
+
+.badge{
+    display: inline-block;
+    border-radius: 10px;
+    min-width:10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: tomato;
+    line-height: 1;
+    padding:3px 7px;
+    font-size: 12px;
+    font-weight:700;
+    color:var(--badge-color);
+    background-color:var(--badge-bgcolor);
+}
+.badge-red{
+    background-color: var( --badge-red);
+}
+.badge-avatar {
+    position: absolute;
+    right:9px;
+    bottom:10px;
+}
+.badge-online{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color:var(--badge-online);
+    right:9px;
+    bottom:10px;
+
+
+}
+
+/* Following css are added for experimental purpose */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../GlobalStyles/general.css" />
+    <!-- This is reset.css -->
+    <link rel="stylesheet" href="../GlobalStyles/allstyle.css" />
+    <!-- This style is using the different component styles in other web pages -->
+    <link rel="stylesheet" href="../GlobalStyles/sitestyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Avatar</title>
+  </head>
+  <body>
+    <!-- https://robohash.org/pratyush.png?set=set5 -->
+    <header>
+      <a class="logo" href="../index.html">CUI</a>
+      <span>
+        <span><a href="#">Docs</a></span>
+        <span><a href="#">Examples</a></span>
+      </span>
+    </header>
+
+    <main>
+      <nav>
+        <a href="../GetStarted/index.html">Get Started</a>
+        <hr />
+        <h4>Components</h4>
+        <hr />
+        <ul>
+          <li><a href="../Avatar/index.html">Avatar</a></li>
+          <li><a href="../Alert/index.html">Alert</a></li>
+          <li><a href="../Badge/index.html">Badge</a></li>
+          <li><a href="../Button/index.html">Button</a></li>
+          <li><a href="../card/index.html">Card</a></li>
+          <li><a href="../image/index.html">Image</a></li>
+          <li><a href="../Input/index.html">Input</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Avatar</h3>
+        <p>
+          Avatars are user profile pictures, usually found in circular shapes.
+          Avatars can be used for 'container' objects — projects, spaces,
+          repositories, etcetera — to give them a recognisable visual identity.
+        </p>
+        <hr />
+        <div class="avatar-container">
+          <h4>Profile Avatar</h4>
+          <p>
+            Profile Avatars can be created using the class 'avatar', inside the
+            img tag.
+          </p>
+          <div class="container">
+            <img
+              src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50.jpg"
+              alt=""
+              srcset=""
+              class="avatar"
+            />
+            <img
+              src=" https://picsum.photos/200/300?random=1"
+              alt=""
+              class="avatar"
+            />
+            <img
+              src=" https://picsum.photos/200/300?random=3"
+              alt="avatar"
+              class="avatar"
+            />
+          </div>
+          <div
+            class="container iframe"
+            style="
+              height: 300px;
+              background-color: transparent;
+              padding-left: 0px;
+              padding-right: 0px;
+            "
+          >
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=4px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=18px&lh=160%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fwww.gravatar.com%252Favatar%252F205e460b479e2e5b48aec07710c08d50.jpg%2522%2520class%253D%2522avatar%2522%250A%252F%253E%250A"
+              style="
+                width: 680px;
+                height: 201px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <hr />
+        </div>
+        <div class="avatar-container">
+          <h4>Size Avatar</h4>
+          <p>
+            Size of the avatars can be changed by adding sm | md | lg class to
+            the existing avatar class.
+          </p>
+          <div class="container">
+            <img
+              src="https://picsum.photos/200/300?random=1"
+              alt=""
+              srcset=""
+              class="avatar avatar-sm"
+            />
+            <img
+              src=" https://picsum.photos/200/300?random=4"
+              alt=""
+              class="avatar avatar-medium"
+            />
+            <img
+              src=" https://picsum.photos/200/300?random=5"
+              alt="avatar"
+              class="avatar avatar-lg"
+            />
+          </div>
+          <div
+            class="container iframe"
+            style="
+              height: 300px;
+              background-color: transparent;
+              padding-left: 0px;
+              padding-right: 0px;
+            "
+          >
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=4px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=18px&lh=160%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F300%253Frandom%253D1%2522%2520class%253D%2522avatar%2520avatar-sm%2522%252F%253E%250A%253Cimg%2520src%253D%2522%2520https%253A%252F%252Fpicsum.photos%252F200%252F300%253Frandom%253D4%2522%2520class%253D%2522avatar%2520avatar-medium%2522%252F%253E%250A%253Cimg%2520src%253D%2522%2520https%253A%252F%252Fpicsum.photos%252F200%252F300%253Frandom%253D5%2522%2520class%253D%2522avatar%2520avatar-lg%2522%2520%252F%253E"
+              style="
+                width: 680px;
+                height: 230px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <hr />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="../Alert/index.html">NEXT <i class="bi bi-arrow-right"></i></a
+      ><a href="#"> <i class="bi bi-arrow-left"></i>PREV</a>
+    </footer>
+  </body>
+</html>
