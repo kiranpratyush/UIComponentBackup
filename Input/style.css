@@ -1,13 +1,13 @@
-:root{
-    --color-border:#e1e1e1;
-    --color-text-color:#b7b7b7;
-    --success-border-color:#3c763d;
-    --suceess-focus-border-color:#2b542c;
-    --success-focus-boxshadow:#67b168;
-    --color-boxshadow:rgb(0 0 0 / 8%);
-    --color-errorborder:#a94442;
-    --color-focus-errorborder:#843534;
-    --color-focus-boxshadow:#ce8483;
+:root {
+  --color-border: #e1e1e1;
+  --color-text-color: #b7b7b7;
+  --color-success-border: #3c763d;
+  --color-success-border-focus: #2b542c;
+  --success-focus-boxshadow: #67b168;
+  --color-boxshadow: rgb(0 0 0 / 8%);
+  --color-error-border: #a94442;
+  --color-error-border-focus: #843534;
+  --color-boxshadow-focus: #ce8483;
 }
 .input {
   height: 50px;
@@ -25,27 +25,29 @@
   padding-left: 20px;
   padding-top: 12px;
   font-size: 15px;
-  color:var(--color-text-color) ;
+  color: var(--color-text-color);
   resize: none;
 }
 .success {
-  border-color:var(--success-border-color) ;
-  box-shadow: inset 0 1px 1px var(--color-boxshadow) ;
+  border-color: var(--color-success-border);
+  box-shadow: inset 0 1px 1px var(--color-boxshadow);
 }
 .success:focus {
-  border-color: var(--suceess-focus-border-color);
-  box-shadow: inset 0 1px 1px var(--color-boxshadow), 0 0 6px var(--success-focus-boxshadow) ;
+  border-color: var(--color-success-border-focus);
+  box-shadow: inset 0 1px 1px var(--color-boxshadow),
+    0 0 6px var(--success-focus-boxshadow);
   outline: none;
 }
 
 .error {
-  border-color:var(--color-errorborder) ;
+  border-color: var(--color-error-border);
   box-shadow: inset 0 1px 1px var(--color-boxshadow);
 }
 
 .error:focus {
-  border-color: var(--color-focus-errorborder);
-  box-shadow: inset 0 1px 1px var(--color-boxshadow), 0 0 6px var(--color-focus-boxshadow);
+  border-color: var(--color-error-border-focus);
+  box-shadow: inset 0 1px 1px var(--color-boxshadow),
+    0 0 6px var(--color-boxshadow-focus);
   outline: none;
 }
 

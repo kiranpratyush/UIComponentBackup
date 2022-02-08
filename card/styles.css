@@ -1,114 +1,99 @@
 /* h4 font size is 1.5 rem */
-:root{
-    --color-white:#fff;
-    --card-border-color:rgba(0,0,0,0.125);
-    --card-background-color:#fff;
-    --shadowcard-boxshadow-color:rgb(87,84,84);
-    --cardanimated-color:red;
+:root {
+  --color-white: #fff;
+  --color-card-border: rgba(0, 0, 0, 0.125);
+  --color-card-background: #fff;
+  --color-boxshadow: rgb(87, 84, 84);
+  --color-card-animated: red;
 }
-.card{
-    border:1px solid var(--card-border-color);
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    background-color: var( --card-background-color);
-    border-radius:0.25rem;
-    line-height:1.25;
-    max-width:260px;
-    min-width:260px;
+.card {
+  border: 1px solid var(--color-card-border);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-background);
+  border-radius: 0.25rem;
+  line-height: 1.25;
+  max-width: 260px;
+  min-width: 260px;
 }
-.card-body{
-    
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    flex-shrink: 1;
-    padding:1.25rem;
-    line-height: 1.24;
-    
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 1;
+  padding: 1.25rem;
+  line-height: 1.24;
 }
-.card-imgwrapper{
-    object-fit: cover;
-
-   
+.card-imgwrapper {
+  object-fit: cover;
 }
-.card-shadow{
-    box-shadow: 2px 2px 2px var(--shadowcard-boxshadow-color);
+.card-shadow {
+  box-shadow: 2px 2px 2px var(--color-boxshadow);
 }
 
-/* This syling is not being used */
-/* .content-overlay{
-    position: absolute;
-    top:10px;
-    color:white;
-} */
-
-.card-content{
-    
-    background-color: var(--color-white);
-    position: relative;
-    padding: 30px 30px 25px;
-    top:-40px
-} 
-
-
-.card-animated{
-    max-width:300px;
-    overflow:hidden;
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    border-radius:0.25rem;
-    line-height:1.25;
-    max-width:360px;
-    min-width:260px;
-    gap:10px;
-    
-}
-.card-animated h4{
-    margin-top:20px;
+.card-content {
+  background-color: var(--color-white);
+  position: relative;
+  padding: 30px 30px 25px;
+  top: -40px;
 }
 
+.card-animated {
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.25rem;
+  line-height: 1.25;
+  max-width: 360px;
+  min-width: 260px;
+  gap: 10px;
+}
+.card-animated h4 {
+  margin-top: 20px;
+}
 
-.card-animated a{
-    color:var(--cardanimated-color);
-    font-weight: 700;
-    opacity:0;
-    display: inline-block;
-    transform: translateY(0px);
-    transition: all 0.6s;
+.card-animated a {
+  color: var(--color-card-animated);
+  font-weight: 700;
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(0px);
+  transition: all 0.6s;
 }
-.card-animated:hover a{
-    opacity: 1;
-    transform:translateY(29px);
-    display: inline-block;
-    transition: all 0.6s;
-    color:var(--cardanimated-color);
-    font-weight: 700;
-    text-decoration: none;
+.card-animated:hover a {
+  opacity: 1;
+  transform: translateY(29px);
+  display: inline-block;
+  transition: all 0.6s;
+  color: var(--color-card-animated);
+  font-weight: 700;
+  text-decoration: none;
 }
-.card-animated h5{
-    font-size:1.3rem;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.2s;
+.card-animated h5 {
+  font-size: 1.3rem;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
 }
-.card-animated:hover h5{
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.2s;
+.card-animated:hover h5 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
 }
-.card-animated button{
-    position: absolute;
-    top:10px;
-    right:10px;
-    opacity: 0;
-    transition: opacity 0.6s;
+.card-animated button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.6s;
 }
-.card-animated:hover button{
-    opacity:1;
-    transition: all 0.6s;
+.card-animated:hover button {
+  opacity: 1;
+  transition: all 0.6s;
 }
-.card-animated i{
-    font-size:2rem;
+.card-animated i {
+  font-size: 2rem;
 }

@@ -14,13 +14,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="../GlobalStyles/general.css" />
     <!-- This is reset.css -->
     <link rel="stylesheet" href="../GlobalStyles/allstyle.css" />
     <!-- This style is using the different component styles in other web pages -->
     <link rel="stylesheet" href="../GlobalStyles/sitestyle.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Alert</title>
+    <title>Rating</title>
   </head>
   <body>
     <header>
@@ -30,6 +35,7 @@
         <span><a href="#">Examples</a></span>
       </span>
     </header>
+
     <main>
       <nav>
         <a href="../GetStarted/index.html">Get Started</a>
@@ -54,39 +60,34 @@
         </ul>
       </nav>
       <section>
-        <h3>Alert</h3>
-        <p>
-          Avatars are user profile pictures, usually found in circular shapes.
-          Avatars can be used for 'container' objects — projects, spaces,
-          repositories, etcetera — to give them a recognisable visual identity.
-        </p>
+        <h3>Rating</h3>
+        <p></p>
         <hr />
-        <h4>Alert</h4>
-        <p>
-          Profile Avatars can be created using the class 'avatar', inside the
-          img tag.
-        </p>
-        <div class="container flex-container">
-          <div class="alert alert-primary">I am a Primary Alert</div>
-          <div class="alert alert-warning">I am a Warning Alert</div>
-          <div class="alert alert-success">I am a Success Alert</div>
-          <div class="alert alert-danger">I am a Danger Alert</div>
-          <div class="alert alert-secondary">I am a Secondary Alert</div>
+        <h4>E commerce Rating</h4>
+        <p></p>
+        <div class="container flex-container" style="justify-content: center">
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
         </div>
         <div
-          class="container iframe"
+          class="container"
           style="
-            height: 300px;
+            height: 350px;
             background-color: transparent;
             padding-left: 0px;
-            padding-right: 0px;
+            padding-right: 0px; ;
           "
         >
           <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=auto&width=680&ds=false&dsyoff=0px&dsblur=4px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=18px&lh=160%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253EI%2520am%2520a%2520Primary%2520Alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253EI%2520am%2520a%2520Warning%2520Alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253EI%2520am%2520a%2520Success%2520Alert%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253EI%2520am%2520a%2520Danger%2520Alert%253C%252Fdiv%253E%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253EI%2520am%2520anSecondary%2520Alert%253C%252Fdiv%253E"
+            src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=0px&dsblur=4px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14.5px&lh=154%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fspan%253E%250A%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
             style="
               width: 680px;
-              height: 247px;
+              height: 236px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -98,9 +99,11 @@
         <hr />
       </section>
     </main>
-    <footer>
-      <a href="../Badge/index.html">NEXT <i class="bi bi-arrow-right"></i></a
-      ><a href="../Avatar/index.html"> <i class="bi bi-arrow-left"></i>PREV</a>
+    <footer style="position: fixed; bottom: 0; width: 70%">
+      <a href="../Text/index.html">NEXT <i class="bi bi-arrow-right"></i></a
+      ><a href="../Navigation/index.html">
+        <i class="bi bi-arrow-left"></i>PREV</a
+      >
     </footer>
   </body>
 </html>

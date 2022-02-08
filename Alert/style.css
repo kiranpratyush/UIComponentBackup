@@ -1,63 +1,62 @@
-:root{
-    --primary-color:#004085;
-    --primary-bgcolor: #cce5ff;
-    --primary-bordercolor: #cce5ff;
-    /* color assests for secondary Alert */
-    --secondary-color:#383d41;
-    --secondary-bgcolor: #e2e3e5;
-    --secondary-bordercolor: #d6d8db;
-    /* color assets for success Alert */
-    --success-color:#155724;
-    --success-bgcolor: #d4edda;
-    --success-bordercolor:#c3e6cb;
-    /* color assets for danger alert */
-    --danger-color: #721c24;
-    --danger-bgcolor: #f8d7da;
-    --danger-bordercolor:  #f5c6cb;
-    /* color assets for Warning Alert */
-    --warning-color:#856404;
-    --warning-bgcolor: #fff3cd;
-    --warning-bordercolor: #ffeeba;
+:root {
+  --primary-color: #004085;
+  --primary-bgcolor: #cce5ff;
+  --primary-bordercolor: #cce5ff;
+  /* color assests for secondary Alert */
+  --secondary-color: #383d41;
+  --secondary-bgcolor: #e2e3e5;
+  --secondary-bordercolor: #d6d8db;
+  /* color assets for success Alert */
+  --success-color: #155724;
+  --success-bgcolor: #d4edda;
+  --success-bordercolor: #c3e6cb;
+  /* color assets for danger alert */
+  --danger-color: #721c24;
+  --danger-bgcolor: #f8d7da;
+  --danger-bordercolor: #f5c6cb;
+  /* color assets for Warning Alert */
+  --warning-color: #856404;
+  --warning-bgcolor: #fff3cd;
+  --warning-bordercolor: #ffeeba;
 
-    /* Different sizes variable */
-    --border-size:1px;
-    --border-radius:0.25rem;
-    --padding-topbottom:0.75rem;
-    --padding-leftright:1.25rem;
-    --margin-bottom:10px;
-
+  /* Different sizes variable */
+  --border-size: 1px;
+  --border-radius: 0.25rem;
+  --padding-topbottom: 0.75rem;
+  --padding-leftright: 1.25rem;
+  --margin-bottom: 10px;
 }
-.alert{
-    border:var(--border-size) solid transparent;
-    border-radius:var(--border-radius);
-    padding:var(--padding-topbottom) var(--padding-leftright);
-    margin-bottom: var(--margin-bottom); /* This is Experimantal*/
-}
-
-.alert-primary{
-    background-color: var(--primary-bgcolor);
-    color:var(--primary-color);
-    border-color:var(--primary-bordercolor)
+.alert {
+  border: var(--border-size) solid transparent;
+  border-radius: var(--border-radius);
+  padding: var(--padding-topbottom) var(--padding-leftright);
+  margin-bottom: var(--margin-bottom); /* This is Experimantal*/
 }
 
-.alert-secondary{
-    background-color: var(--secondary-bgcolor);
-    color:var(--secondary-color);
-    border-color:var(--secondary-bordercolor)
+.alert-primary {
+  background-color: var(--primary-bgcolor);
+  color: var(--primary-color);
+  border-color: var(--primary-bordercolor);
 }
 
-.alert-success{
-    background-color: var(--success-bgcolor);
-    color:var(--success-color);
-    border-color:var(--success-bordercolor)
+.alert-secondary {
+  background-color: var(--secondary-bgcolor);
+  color: var(--secondary-color);
+  border-color: var(--secondary-bordercolor);
 }
-.alert-danger{
-    background-color: var(--danger-bgcolor);
-    color:var(--danger-color);
-    border-color:var(--danger-bordercolor)
+
+.alert-success {
+  background-color: var(--success-bgcolor);
+  color: var(--success-color);
+  border-color: var(--success-bordercolor);
 }
-.alert-warning{
-    background-color: var(--warning-bgcolor);
-    color:var(--warning-color);
-    border-color:var(--warning-bordercolor)
+.alert-danger {
+  background-color: var(--danger-bgcolor);
+  color: var(--danger-color);
+  border-color: var(--danger-bordercolor);
+}
+.alert-warning {
+  background-color: var(--warning-bgcolor);
+  color: var(--warning-color);
+  border-color: var(--warning-bordercolor);
 }

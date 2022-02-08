@@ -1,27 +1,26 @@
-:root{
-    --base-height:80px;
-    --base-width:80px;
-    --base-borderradius:50%;
-    --small-height:50px;
-    --small-width:50px;
-    --large-height:130px;
-    --large-width:130px;
+:root {
+  --base-height: 80px;
+  --base-width: 80px;
+  --base-borderradius: 50%;
+  --small-height: 50px;
+  --small-width: 50px;
+  --large-height: 130px;
+  --large-width: 130px;
 }
-
 
 /* This class is for base avatar styling */
-.avatar{
-    height:var(--base-height);
-    width:var(--base-width);
-    border-radius:var(--base-borderradius);
+.avatar {
+  height: var(--base-height);
+  width: var(--base-width);
+  border-radius: var(--base-borderradius);
 }
 /* This class is for small avatar */
-.avatar-sm{
-    height:var(--small-height);
-    width:var(--small-width);
+.avatar-sm {
+  height: var(--small-height);
+  width: var(--small-width);
 }
 /* This class is for lg avatar styling */
-.avatar-lg{
-    height:var(--large-height);
-    width:var(--large-width);
+.avatar-lg {
+  height: var(--large-height);
+  width: var(--large-width);
 }
