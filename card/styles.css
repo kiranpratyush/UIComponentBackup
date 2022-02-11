@@ -1,10 +1,11 @@
 /* h4 font size is 1.5 rem */
-:root {
+.card {
   --color-white: #fff;
   --color-card-border: rgba(0, 0, 0, 0.125);
   --color-card-background: #fff;
   --color-boxshadow: rgb(87, 84, 84);
   --color-card-animated: red;
+  --color-card-badge: #7dd3fc;
 }
 .card {
   border: 1px solid var(--color-card-border);
@@ -14,16 +15,22 @@
   background-color: var(--color-card-background);
   border-radius: 0.25rem;
   line-height: 1.25;
-  max-width: 260px;
+  max-width: 400px;
   min-width: 260px;
 }
 .card-body {
   display: flex;
   flex-direction: column;
+  align-items: space-between;
   gap: 20px;
   flex-shrink: 1;
   padding: 1.25rem;
   line-height: 1.24;
+}
+.card-body-horizontal {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
 }
 .card-imgwrapper {
   object-fit: cover;
@@ -37,6 +44,32 @@
   position: relative;
   padding: 30px 30px 25px;
   top: -40px;
+}
+.card-textoverlay {
+  position: absolute;
+  color: var(--color-white);
+  padding: 10px;
+}
+.card-horizontal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+}
+.card-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--color-card-badge);
+  padding: 10px;
+  border-radius: 2px;
+}
+.card-dissmissable {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.card-dissmissable button {
+  align-self: center;
 }
 
 .card-animated {
@@ -96,4 +129,12 @@
 }
 .card-animated i {
   font-size: 2rem;
+}
+
+/* This style for iframe(not working properly) */
+.iframe-style {
+  height: 500px;
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 0px;
 }
