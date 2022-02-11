@@ -1,3 +1,46 @@
+@keyframes drop-out {
+  from {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+  to{
+    transform: rotate(-30deg) translateX(-100%) ;
+    opacity: 0;
+
+  }
+  
+}
+@keyframes drop-in {
+  from {
+    transform: rotate(0deg) translateX(0%);
+    opacity: 1;
+  }
+  to{
+    transform: rotate(50deg) translateX(100%) ;
+    opacity: 0;
+
+  }
+  
+}
+@keyframes drop-out2{
+  from {
+    transform: rotate(0deg) translateX(0%);
+    opacity: 1;
+  }
+  to{
+    transform: rotate(0deg) translateX(100%) ;
+    opacity: 0;
+
+  }
+  
+}
+:root{
+  --color-success:#4caf50;
+  --color-warning:#f0ad4e;
+  --color-error:#721c24;
+}
+
+
 .toast {
   padding: 1rem;
   font-size: 1.2rem;
@@ -5,5 +48,22 @@
   background-color: white;
   text-align: center;
   border-radius: 5px;
-  border: 1px solid #4caf50;
+  border: 1px solid ;
+  animation: drop-out 2000ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+.toast-success{
+  border-color: var(--color-success);
+}
+.toast-warning{
+  border-color:var(--color-warning);
+  animation: drop-in 2000ms;
+  animation-iteration-count: infinite;
+}
+
+.toast-error{
+  border-color: var(--color-error);
+  animation: drop-out2 2000ms;
+  animation-iteration-count: infinite;
 }
