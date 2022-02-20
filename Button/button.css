@@ -59,13 +59,15 @@
 }
 .btn-round {
   border-radius: 50%;
-  min-height: 80px;
-  min-width: 80px;
-  font-size: 30px;
+  min-height: 60px;
+  min-width: 60px;
+  font-size: 1.4rem;
+  padding-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .btn:active {
   outline: none;
